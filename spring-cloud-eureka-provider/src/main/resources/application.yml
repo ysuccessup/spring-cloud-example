@@ -1,6 +1,10 @@
 server:
   port: 8762
-
+#
+#server:
+#  port: 8765
+# springboot 启动选中allow paraller run 可启动两个服务
+#
 spring:
   application:
     name: service-hi

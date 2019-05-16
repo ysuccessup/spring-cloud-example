@@ -11,7 +11,12 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @author: ysuccessup
  * @Date: 2019/5/15 23:40
  */
-@FeignClient(value = "service-hi")
+
+/**
+ * 加入熔断前：@FeignClient(value = "service-hi")
+ * 加入熔断后：@FeignClient(value = "service-hi",fallback = ServiceHiHystric.class)
+ */
+@FeignClient(value = "service-hi",fallback = ServiceHiHystric.class)
 public interface ServiceHi {
 
     @RequestMapping(value = "/ysuccessup/hi",method = RequestMethod.GET)
