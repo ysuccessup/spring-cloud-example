@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-consume-hystrix-dashboard/spring-cloud-consume-hystrix-dashboard.iml" filepath="$PROJECT_DIR$/spring-cloud-consume-hystrix-dashboard/spring-cloud-consume-hystrix-dashboard.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud-eureka/spring-cloud-eureka.iml" filepath="$PROJECT_DIR$/spring-cloud-eureka/spring-cloud-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud-eureka-cluster/spring-cloud-eureka-cluster.iml" filepath="$PROJECT_DIR$/spring-cloud-eureka-cluster/spring-cloud-eureka-cluster.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-cloud-eureka-consume/spring-cloud-eureka-consume.iml" filepath="$PROJECT_DIR$/spring-cloud-eureka-consume/spring-cloud-eureka-consume.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-eureka-feign-Hystrix/spring-cloud-eureka-feign-hystrix.iml" filepath="$PROJECT_DIR$/spring-cloud-eureka-feign-Hystrix/spring-cloud-eureka-feign-hystrix.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud-eureka-provider/spring-cloud-eureka-provider.iml" filepath="$PROJECT_DIR$/spring-cloud-eureka-provider/spring-cloud-eureka-provider.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-cloud-eureka-ribbon/spring-cloud-eureka-ribbon.iml" filepath="$PROJECT_DIR$/spring-cloud-eureka-ribbon/spring-cloud-eureka-ribbon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-eureka-ribbon-Hystrix/spring-cloud-eureka-ribbon-Hystrix.iml" filepath="$PROJECT_DIR$/spring-cloud-eureka-ribbon-Hystrix/spring-cloud-eureka-ribbon-Hystrix.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud-eureka-to/spring-cloud-eureka-to.iml" filepath="$PROJECT_DIR$/spring-cloud-eureka-to/spring-cloud-eureka-to.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/spring-cloud-example.iml" filepath="$PROJECT_DIR$/.idea/spring-cloud-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-turbine/spring-cloud-turbine.iml" filepath="$PROJECT_DIR$/spring-cloud-turbine/spring-cloud-turbine.iml" />
     </modules>
   </component>
 </project>

@@ -6,37 +6,53 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring-cloud-consume-hystrix-dashboard" />
         <module name="spring-cloud-eureka-cluster" />
-        <module name="spring-cloud-eureka-consume" />
+        <module name="spring-cloud-turbine" />
         <module name="spring-cloud-eureka" />
-        <module name="spring-cloud-eureka-ribbon" />
         <module name="spring-cloud-eureka-provider" />
         <module name="spring-clound-eureka" />
         <module name="spring-cloud-eureka-to" />
       </profile>
+      <profile name="Annotation profile for eureka-consume" enabled="true">
+        <sourceOutputDir name="../spring-cloud-eureka-consume/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../spring-cloud-eureka-consume/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-cloud-eureka-feign-hystrix" />
+      </profile>
+      <profile name="Annotation profile for eureka-ribbon" enabled="true">
+        <sourceOutputDir name="../spring-cloud-eureka-ribbon/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../spring-cloud-eureka-ribbon/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-cloud-eureka-ribbon-Hystrix" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="eureka-server" target="1.8" />
+      <module name="spring-cloud-consume-hystrix-dashboard" target="1.8" />
       <module name="spring-cloud-eureka" target="1.8" />
       <module name="spring-cloud-eureka-cluster" target="1.8" />
-      <module name="spring-cloud-eureka-consume" target="1.8" />
+      <module name="spring-cloud-eureka-feign-hystrix" target="1.8" />
       <module name="spring-cloud-eureka-provider" target="1.8" />
-      <module name="spring-cloud-eureka-ribbon" target="1.8" />
+      <module name="spring-cloud-eureka-ribbon-Hystrix" target="1.8" />
       <module name="spring-cloud-eureka-server" target="1.8" />
       <module name="spring-cloud-eureka-to" target="1.8" />
+      <module name="spring-cloud-turbine" target="1.8" />
       <module name="spring-clound-eureka" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="eureka-server" options="-parameters" />
+      <module name="spring-cloud-consume-hystrix-dashboard" options="-parameters" />
       <module name="spring-cloud-eureka" options="-parameters" />
       <module name="spring-cloud-eureka-cluster" options="-parameters" />
-      <module name="spring-cloud-eureka-consume" options="-parameters" />
+      <module name="spring-cloud-eureka-feign-hystrix" options="-parameters" />
       <module name="spring-cloud-eureka-provider" options="-parameters" />
-      <module name="spring-cloud-eureka-ribbon" options="-parameters" />
+      <module name="spring-cloud-eureka-ribbon-Hystrix" options="-parameters" />
       <module name="spring-cloud-eureka-server" options="-parameters" />
       <module name="spring-cloud-eureka-to" options="-parameters" />
+      <module name="spring-cloud-turbine" options="-parameters" />
       <module name="spring-clound-eureka" options="-parameters" />
     </option>
   </component>
