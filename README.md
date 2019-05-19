@@ -1,6 +1,6 @@
 # spring-cloud-example
 记录过程中的问题
-1.
+1.     
 PROBLEM:
         ***************************
         APPLICATION FAILED TO START
