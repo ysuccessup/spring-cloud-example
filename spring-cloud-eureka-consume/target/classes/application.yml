@@ -1,0 +1,14 @@
+server:
+  port: 8763
+
+spring:
+  application:
+    name: service-feign
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+#开启断路器(feign自带)
+feign.hystrix.enabled: true

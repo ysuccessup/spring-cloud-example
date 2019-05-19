@@ -16,6 +16,7 @@
         <option value="$PROJECT_DIR$/spring-cloud-eureka-ribbon/pom.xml" />
         <option value="$PROJECT_DIR$/spring-cloud-consume-hystrix-dashboard/pom.xml" />
         <option value="$PROJECT_DIR$/spring-cloud-turbine/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-zuul/pom.xml" />
       </list>
     </option>
   </component>

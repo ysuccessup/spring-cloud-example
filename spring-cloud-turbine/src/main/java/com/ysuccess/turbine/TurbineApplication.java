@@ -21,7 +21,7 @@ public class TurbineApplication {
      * InstanceMonitor$MisconfiguredHostException
      * @return
      */
-    @Bean
+  /*  @Bean
     public ServletRegistrationBean getServlet() {
         HystrixMetricsStreamServlet streamServlet = new HystrixMetricsStreamServlet();
         ServletRegistrationBean registrationBean = new ServletRegistrationBean(streamServlet);
@@ -29,6 +29,6 @@ public class TurbineApplication {
         registrationBean.addUrlMappings("/hystrix.stream");
         registrationBean.setName("HystrixMetricsStreamServlet");
         return registrationBean;
-    }
+    }*/
 
 }

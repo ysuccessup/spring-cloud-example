@@ -6,13 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-cloud-consume-hystrix-dashboard" />
-        <module name="spring-cloud-eureka-cluster" />
         <module name="spring-cloud-turbine" />
+        <module name="spring-cloud-eureka-cluster" />
+        <module name="spring-cloud-eureka-to" />
+        <module name="spring-cloud-zuul" />
         <module name="spring-cloud-eureka" />
         <module name="spring-cloud-eureka-provider" />
         <module name="spring-clound-eureka" />
-        <module name="spring-cloud-eureka-to" />
+        <module name="spring-cloud-consume-hystrix-dashboard" />
       </profile>
       <profile name="Annotation profile for eureka-consume" enabled="true">
         <sourceOutputDir name="../spring-cloud-eureka-consume/target/generated-sources/annotations" />
@@ -38,6 +39,7 @@
       <module name="spring-cloud-eureka-server" target="1.8" />
       <module name="spring-cloud-eureka-to" target="1.8" />
       <module name="spring-cloud-turbine" target="1.8" />
+      <module name="spring-cloud-zuul" target="1.8" />
       <module name="spring-clound-eureka" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -53,6 +55,7 @@
       <module name="spring-cloud-eureka-server" options="-parameters" />
       <module name="spring-cloud-eureka-to" options="-parameters" />
       <module name="spring-cloud-turbine" options="-parameters" />
+      <module name="spring-cloud-zuul" options="-parameters" />
       <module name="spring-clound-eureka" options="-parameters" />
     </option>
   </component>
