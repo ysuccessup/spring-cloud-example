@@ -2,9 +2,6 @@
 记录过程中的问题      
 1.     
 PROBLEM:
-        ***************************
-        APPLICATION FAILED TO START
-        ***************************
 
         Description:
         The bean 'proxyRequestHelper', defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulProxyAutoConfiguration$NoActuatorConfiguration.class], could not be registered. A bean with that name has already been defined in class path resource [org/springframework/cloud/netflix/zuul/ZuulProxyAutoConfiguration$EndpointConfiguration.class] and overriding is disabled.
