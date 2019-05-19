@@ -7,5 +7,9 @@
         Action:
         Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
    REASON:  SpringBoot 2.1.5.RELEASE 和SpringCloud Finchley.RELEASE 版本没有匹配上,降低springboot版本为2.0.3.RELEASE
+2. PROBLEM: zuul请求超时    
+        
+        com.netflix.zuul.exception.ZuulException: Forwarding error
+   Reason: ribbon:  ReadTimeout: 3000 ConnectTimeout: 3000
         
       
