@@ -8,6 +8,6 @@ PROBLEM:
         Action:
         Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
 REASON:         
-        SpringBoot 2.1.5.RELEASE 和SpringCloud Finchley.RELEASE 版本没有匹配上,降低springboot版本为2.0.3.RELEASE
+         SpringBoot 2.1.5.RELEASE 和SpringCloud Finchley.RELEASE 版本没有匹配上,降低springboot版本为2.0.3.RELEASE
         
       
