@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          #配置git仓库地址
+          uri: https://github.com/ysuccessup/spring-cloud-config
+          #配置仓库路径
+          search-paths: repo
+          #访问git仓库的用户名
+          username:
+          #访问git仓库的用户密码
+          password:
+      #配置仓库的分支
+      label: master
+
+server:
+  port: 8888
+

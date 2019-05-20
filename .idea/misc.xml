@@ -17,7 +17,15 @@
         <option value="$PROJECT_DIR$/spring-cloud-consume-hystrix-dashboard/pom.xml" />
         <option value="$PROJECT_DIR$/spring-cloud-turbine/pom.xml" />
         <option value="$PROJECT_DIR$/spring-cloud-zuul/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/config-client/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/spring-cloud-config/config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-config/spring-cloud-config-server/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK" />

@@ -29,7 +29,12 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="config-client" target="1.8" />
+      <module name="config-server" target="1.8" />
+      <module name="demo" target="1.8" />
       <module name="eureka-server" target="1.8" />
+      <module name="spring-cloud-config" target="1.8" />
+      <module name="spring-cloud-config-server" target="1.8" />
       <module name="spring-cloud-consume-hystrix-dashboard" target="1.8" />
       <module name="spring-cloud-eureka" target="1.8" />
       <module name="spring-cloud-eureka-cluster" target="1.8" />
@@ -45,7 +50,12 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="config-client" options="-parameters" />
+      <module name="config-server" options="-parameters" />
+      <module name="demo" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
+      <module name="spring-cloud-config" options="" />
+      <module name="spring-cloud-config-server" options="-parameters" />
       <module name="spring-cloud-consume-hystrix-dashboard" options="-parameters" />
       <module name="spring-cloud-eureka" options="-parameters" />
       <module name="spring-cloud-eureka-cluster" options="-parameters" />
