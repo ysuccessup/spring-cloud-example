@@ -2,7 +2,7 @@ package com.ysuccess.configclient;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
  * Create by idea
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @Date: 2019/5/20 23:02
  */
 @SpringBootApplication
-@RestController
+@EnableEurekaClient
 public class ConfigClientApplication {
 
     public static void main(String[] args) {
