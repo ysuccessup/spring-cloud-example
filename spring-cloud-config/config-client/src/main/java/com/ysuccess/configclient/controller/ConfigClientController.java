@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/ysuccessup")
-public class ConfigController {
+public class ConfigClientController {
 
     @Value("${foo}")
     String foo;

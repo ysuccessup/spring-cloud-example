@@ -8,12 +8,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="config-server" />
         <module name="eureka-server" />
+        <module name="config-client-two" />
         <module name="config-client" />
         <module name="config-server-two" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="config-client" target="1.8" />
+      <module name="config-client-two" target="1.8" />
       <module name="config-server" target="1.8" />
       <module name="config-server-two" target="1.8" />
       <module name="eureka-server" target="1.8" />
@@ -23,6 +25,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="config-client" options="-parameters" />
+      <module name="config-client-two" options="-parameters" />
       <module name="config-server" options="-parameters" />
       <module name="config-server-two" options="-parameters" />
       <module name="eureka-server" options="-parameters" />

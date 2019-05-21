@@ -4,11 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.ysuccess</groupId>
-    <artifactId>config-client</artifactId>
+    <artifactId>config-client-two</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>config-client</name>
+    <name>config-client-two</name>
     <description>Demo project for Spring Boot</description>
 
     <parent>
@@ -48,5 +48,6 @@
             </plugin>
         </plugins>
     </build>
+
 
 </project>
