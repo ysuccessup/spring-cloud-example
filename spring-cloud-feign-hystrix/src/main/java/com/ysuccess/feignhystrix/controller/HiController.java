@@ -1,10 +1,11 @@
-package com.ysuccess.eurekaconsume.controller;
+package com.ysuccess.feignhystrix.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import com.ysuccess.feignhystrix.service.HiService;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.ysuccess.eurekaconsume.service.ServiceHi;
+
+import javax.annotation.Resource;
 
 /**
  * Create by idea
@@ -16,12 +17,12 @@ import com.ysuccess.eurekaconsume.service.ServiceHi;
 @RequestMapping("/ysuccessup")
 public class HiController {
 
-    @Autowired
-    private ServiceHi serviceHi;
+    @Resource
+    private HiService hiService;
 
     @RequestMapping("/hi/{name}")
     public String index(@PathVariable("name") String name) {
-        return serviceHi.sayHiFromClientOne(name);
+        return hiService.sayHiFromClientOne(name);
     }
 
 }

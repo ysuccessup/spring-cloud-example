@@ -1,4 +1,4 @@
-package com.ysuccess.eurekaconsume.service;
+package com.ysuccess.feignhystrix.service;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,8 +16,8 @@ import org.springframework.web.bind.annotation.RequestParam;
  * 加入熔断前：@FeignClient(value = "service-hi")
  * 加入熔断后：@FeignClient(value = "service-hi",fallback = ServiceHiHystric.class)
  */
-@FeignClient(value = "service-hi",fallback = ServiceHiHystric.class)
-public interface ServiceHi {
+@FeignClient(value = "service-hi",fallback = HiServiceHystric.class)
+public interface HiService {
 
     @RequestMapping(value = "/ysuccessup/hi",method = RequestMethod.GET)
     String sayHiFromClientOne(@RequestParam(value = "name") String name);
