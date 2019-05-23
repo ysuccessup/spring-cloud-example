@@ -12,6 +12,8 @@
         com.netflix.zuul.exception.ZuulException: Forwarding error
    Reason: 添加配置 ribbon:  ReadTimeout: 3000 ConnectTimeout: 3000
         
-3. Problem:  spring-cloud-feign启动报错：A component required a bean of type 'com.ysuccess.feign.service.HiService' that could not be found.      
+3. Problem:  spring-cloud-feign启动报错：
+
+        A component required a bean of type 'com.ysuccess.feign.service.HiService' that could not be found.      
 
    Reason: FeignApplication 添加 @EnableFeignClients
