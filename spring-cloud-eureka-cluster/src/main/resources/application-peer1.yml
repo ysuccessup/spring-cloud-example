@@ -14,4 +14,4 @@ eureka:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://peer2:8769/eureka/
+      defaultZone: http://peer2:8769/eureka/,http://peer3:8768/eureka/

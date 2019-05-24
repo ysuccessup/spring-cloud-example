@@ -1,17 +1,16 @@
-
-server:
-  port: 8769
-
 spring:
   application:
     name: spring-cloud-eureka
-  profiles: peer2
+  profiles: peer3
+
+server:
+  port: 8768
 
 eureka:
   instance:
-    hostname: peer2
+    hostname: peer3
   client:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://peer1:8761/eureka/,http://peer3:8768/eureka/
+      defaultZone: http://peer1:8761/eureka/,http://peer2:8769/eureka/
