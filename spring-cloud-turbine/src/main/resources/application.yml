@@ -1,16 +1,14 @@
 server:
-  port: 8767
+  port: 8764
 
 spring:
   application:
-    #工程名称
     name: service-turbine
 
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
-
 management:
   endpoints:
     web:
@@ -21,13 +19,10 @@ management:
         allowed-methods: "*"
 
 turbine:
-  #配置Eureka中的serviceId列表，表明监控哪些服务
-  app-config: service-ribbon,service-ribbon2
-  #指定聚合哪些集群，多个使用”,”分割，默认为default。
-  #可使用http://.../turbine.stream?cluster={clusterConfig之一}访问
+  #hystrix-dashboard 更换端口和服务名称启动2次
+  app-config: service-hystrix-dashboard1,service-hystrix-dashboard2
   aggregator:
     clusterConfig: default
   clusterNameExpression: new String("default")
-  combine-host: true
-  instanceUrlSuffix:
-    default: actuator/hystrix.stream        #key为clusterConfig的集群名字，默认为default
+  combine-host-port: true
+  instanceUrlSuffix: /hystrix.stream
