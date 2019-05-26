@@ -9,3 +9,18 @@ spring:
         register: false
 server:
   port: 8503
+  #不需要安全验证
+#Spring Boot 2.0 的Actuator默認只暴露了health和info端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  #启用单独的url来做监控访问入口
+  server:
+    servlet:
+      context-path: /monitor
+  ##可启用接口关闭SpringBoot
+  endpoint:
+    shutdown:
+      enabled: true
