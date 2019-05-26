@@ -5,11 +5,9 @@ eureka:
 
 server:
   port: 8769
-
 spring:
   application:
     name: service-zuul
-
 zuul:
   routes:
     api-a:
@@ -18,9 +16,24 @@ zuul:
     api-b:
       path: /api-b/**
       serviceId: service-feign
+  retryable: true
 #com.netflix.zuul.exception.ZuulException: Forwarding error
 #ribbon请求超时添加一下部分
 ribbon:
-  ReadTimeout: 60000
-  ConnectTimeout: 60000
-
+  ReadTimeout: 2000
+  ConnectTimeout: 1000
+  #对当前服务的重试次数
+  MaxAutoRetries: 2
+  #默认为false,则只允许GET请求被重试
+  OkToRetryOnAllOperations: true
+  #最大自动重试下一个服务的次数
+  MaxAutoRetriesNextServer: 0
+  #某些响应状态码进行重试
+  #retryableStatusCodes: 404,502
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
