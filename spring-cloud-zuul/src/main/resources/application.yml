@@ -8,6 +8,20 @@ server:
 spring:
   application:
     name: service-zuul
+  zipkin:
+    enabled: true
+    base-url: http://locahost:9411/
+    locator:
+      discovery:
+        enabled: true
+    sender:
+      type: web
+    sleuth:
+      web:
+        client:
+          enabled: true
+      sampler:
+        probability: 1.0
 zuul:
   routes:
     api-a:

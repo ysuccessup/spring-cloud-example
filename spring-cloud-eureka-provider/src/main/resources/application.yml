@@ -8,7 +8,20 @@ server:
 spring:
   application:
     name: service-hi
-
+  zipkin:
+    enabled: true
+    base-url: http://locahost:9411/
+    locator:
+      discovery:
+        enabled: true
+    sender:
+      type: web
+    sleuth:
+      web:
+        client:
+          enabled: true
+      sampler:
+        probability: 1.0
 eureka:
   client:
     serviceUrl:

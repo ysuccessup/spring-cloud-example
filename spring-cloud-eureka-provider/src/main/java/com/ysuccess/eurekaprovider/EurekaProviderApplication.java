@@ -1,9 +1,12 @@
 package com.ysuccess.eurekaprovider;
 
+import brave.sampler.Sampler;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
-import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.client.RestTemplate;
 
 /**
  * Create by idea
@@ -24,4 +27,17 @@ public class EurekaProviderApplication {
         SpringApplication.run(EurekaProviderApplication.class, args);
     }
 
+
+    @Autowired
+    private RestTemplate restTemplate;
+
+    @Bean
+    public RestTemplate getRestTemplate(){
+        return new RestTemplate();
+    }
+
+    @Bean
+    public Sampler defaultSampler(){
+        return Sampler.ALWAYS_SAMPLE;
+    }
 }
